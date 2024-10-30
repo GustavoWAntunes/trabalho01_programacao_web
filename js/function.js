@@ -22,7 +22,7 @@ function autenticar() {
 
     localStorage.setItem("pessoa", '[{"login": "' + login.trim() + '", "senha": "' + senha.trim() + '"}]');
 
-    const novaPagina = 'pagina3.html';
+    const novaPagina = 'pages/pagina3.html';
     window.location.href = novaPagina;
   }
 }

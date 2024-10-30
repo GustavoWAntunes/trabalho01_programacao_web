@@ -19,9 +19,9 @@ function aparecerCadastro(){
 function alterarStyle(){
 
     if(custom.value == 'custom'){
-        window.location.href = 'pagina4.html';
+        window.location.href = '../pages/pagina4.html';
 
     } else if (custom.value == 'normal'){
-        window.location.href = 'pagina3.html';
+        window.location.href = '../pages/pagina3.html';
     }
 }
