@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/iconEgg.png">
+    <script src="js/function2.js" async></script>
+</head>
+<body id="body">
+    <header class="cabecalho" id="cabecalho">
+
+        <a class="tituloLogo" href="pagina3.html">
+            <img src="media/iconEgg.png" class="iconEgg">
+            <h1 class="titulo">Egg Games</h1>
+        </a>
+
+        <div class="pesLoja">
+            <section>
+                <img src="media/iconPesquisar.png" class="iconPsq">
+                <input class="barraPesq" required autofocus placeholder="Pesquisar loja">
+            </section>
+
+            <div class="perfil" onclick="aparecerCadastro()">
+                <p id="nmPerfil">USUARIO</p>
+                <img src="media/17a6f339d3f3f777f5d6a2c3576943ca.png" class="iconPersonLogin">
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="menuFrontal">
+        <div class="opcoes">
+            <a class="btnMenuFront">
+                <img src="media/iconStore.png" class="icons">
+                <p class="escOps">Store</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconCommunity.png" class="icons">
+                <p class="escOps">Community</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconAbout.png" class="icons">
+                <p class="escOps">About</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconHelp.png" class="icons">
+                <p class="escOps">Help</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/Settings-PNG0.png" class="icons">
+                <p class="escOps">Settings</p>
+            </a>
+            <a class="btnMenuFront" id="btnExit" href="pagina.html">
+                <img src="media/iconExit.png" class="icons">
+                <p class="escOps">Exit</p>
+            </a>
+        </div>
+    </nav>
+
+    <select name="customizar" id="customizar" onchange="alterarStyle()">
+        <option value="vazio"></option>
+        <option value="normal">Normal</option>
+        <option value="custom">Custom</option>
+    </select>
+
+    <form class="areaCadastro" id="areaCadastro">
+        <h1 class="nmCadastro">Cadastro de Jogos</h1>
+        <div class="opcoesCadastro">
+            <div>
+                <label class="labelCadastro">Nome:</label><br>
+                <input class="inputCadastro" type="text" id="nome" placeholder=" nome">
+                <label class="labelCadastro">Descrição:</label><br>
+                <input class="inputCadastro" type="text" id="desc" placeholder=" descrição">
+                <label class="labelCadastro">Data lançamento:</label><br>
+                <input class="inputCadastro" type="date" id="data">
+            </div>
+
+            <div>
+                <label class="labelCadastro">Tipo:</label><br>
+                <input type="radio" id="radioConsole" name="console" >
+                <label class="labelCadastro">Console</label><br>
+                <input type="radio" id="radioPC" name="pc" >
+                <label class="labelCadastro">PC</label><br>
+
+                <br>
+
+                <input type="checkbox" id="paraMaiores">
+                <label >+18</label><br><br>
+
+                <label for="quantity">Quantidade em estoque:</label>
+                <input type="number" id="quantity" min="0">
+            </div>
+        </div>
+
+        <button class="btnSubmit" id="btnSubmit"><p class="submit">Submit</p></button>
+    </form>
+
+    <div class="conteudo" id="conteudo">
+        <h1 class="titulo">God of War Ragnarok...</h1>
+        <img src="media/gow.jpg" class="imgConteudo">
+        <h1 class="titulo">Horizon Forbidden West...</h1>
+        <img src="media/hfw.jpg" class="imgConteudo">
+        <h1 class="titulo">Mortal Kombat 11...</h1>
+        <img src="media/mk11.jpg" class="imgConteudo">
+    </div>
+
+    <footer>
+        Gustavo Westphal Antunes
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/iconEgg.png">
+    <script src="js/function.js"></script>
+</head>
+<body id="body">
+    <header class="cabecalho" id="cabecalho">
+
+        <a class="tituloLogo" href="pagina.html">
+            <img src="media/iconEgg.png" class="iconEgg">
+            <h1 class="titulo">Egg Games</h1>
+        </a>
+
+        <div class="pesLoja">
+            <section>
+                <img src="media/iconPesquisar.png" class="iconPsq">
+                <input class="barraPesq" required autofocus placeholder="Pesquisar loja">
+            </section>
+
+            <div>
+                <p class="msgUNA">Usuário não autenticado</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <nav class="menuFrontal">
+        <div class="opcoes">
+            <a class="btnMenuFront" onclick="aparecerLogin()">
+                <img src="media/iconPerson.png" class="icons">
+                <p class="escOps">Login</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconStore.png" class="icons">
+                <p class="escOps">Store</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconCommunity.png" class="icons">
+                <p class="escOps">Community</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconAbout.png" class="icons">
+                <p class="escOps">About</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/iconHelp.png" class="icons">
+                <p class="escOps">Help</p>
+            </a>
+            <a class="btnMenuFront">
+                <img src="media/Settings-PNG0.png" class="icons">
+                <p class="escOps">Settings</p>
+            </a>
+        </div>
+    </nav>
+
+    <div class="areaLogin" id="areaLogin">
+        <h1 class="nmLogin">Login</h1>
+        <label class="label" for="login">Login:</label><br>
+        <input class="input" type="text" id="login" placeholder=" usuario">
+        <label class="label" for="senha">Senha:</label><br>
+        <input class="input" type="password" id="senha" placeholder=" senha">
+        <button class="btnAut" onclick="autenticar()" id="btnAut"><p class="auten">Autenticar</p></button>
+    </div>
+
+    <div class="conteudo" id="conteudo">
+        <h1 class="titulo">God of War Ragnarok...</h1>
+        <img src="media/gow.jpg" class="imgConteudo">
+        <h1 class="titulo">Horizon Forbidden West...</h1>
+        <img src="media/hfw.jpg" class="imgConteudo">
+        <h1 class="titulo">Mortal Kombat 11...</h1>
+        <img src="media/mk11.jpg" class="imgConteudo">
+    </div>
+
+    <footer>
+        Gustavo Westphal Antunes
+    </footer>
+</body>
+</html>
